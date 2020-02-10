@@ -1,0 +1,115 @@
+<html>
+	<head>
+		<title>Last Page</title>
+		<link href="https://fonts.googleapis.com/css?family=Qwigley&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Arizonia&display=swap" rel="stylesheet">
+		<style>
+			button{
+				background-color: rgba(0,0,0,0);
+				border: 1px solid red;
+				color: white;		width: 5%;
+				padding: 10px;		border-radius: 100%;
+			}
+			button:hover{
+				border-radius: 100%;
+				background: linear-gradient(77deg, #1e5592, #ccc6dda7);
+				border: 1px solid white;
+				color: white;
+			}
+			body{padding: 0; margin: 0; 
+				background: linear-gradient(77deg, #1e5592, #ccc6dda7);}
+			.pic{
+				border: 2px solid red;
+				border-radius: 72px 0px;
+				height: 400px;	width: 500px;
+				margin: 40px;	padding: 5px; 
+			}
+			h1{color: black; letter-spacing: 5px;
+				font-family: 'Arizonia', cursive;}
+			.wishes{
+				background:linear-gradient(57deg, #1e5592, #ccc6dda7);
+				margin: 40px;	float: right;
+				border: 2px solid lightgreen;
+				height: 460px;	width: 280px;
+				padding: 10px;	color: white;
+
+			}
+			.wishes:hover{background: none;}
+			span{
+				font-size: 35px;
+				letter-spacing: 2px;
+				font-family: 'Qwigley', cursive;
+			}
+			.play{
+				margin: 40px; 	padding: 2px;
+				height: 60px;	width: 60px;
+				border-radius: 70px;
+			}
+			.play:hover{	background: white;}
+			.pause{
+				margin: 40px; padding: 2px;
+				height: 60px;	width: 60px;
+				border-radius: 70px;
+			}
+			.pause:hover{	background: white;}
+			.marq{
+				font-family: 'Arizonia', cursive;
+				margin: 10px;	color: white;
+				height: 100px;	width: 70%;
+				font-size: 55px;
+			}
+		</style>
+		<script>
+			var audio = new Audio("bdy.mp3" ) ;
+			audio.oncanplaythrough = function(){
+				audio.play();
+			}
+			audio.loop = true;
+			audio.onended = function(){
+				audio.play();
+			}
+			function pause(){ audio.pause()}
+		</script>
+	</head>
+	<body>
+		<img class="pic" src="n.jpg">	
+		<div class="wishes">
+			<center>
+				<h1>Wishes</h1>
+				<marquee direction="up" scrolldelay="100" height="380" width="280"><center>
+					<span>
+						Happy, happy birthday! Stay as bright, bubbly and lovely as you are.
+						<br><br><br><br><br><br><br><br><br>
+						My dear friend,<br>may ur special day be full of beautiful, magical & unforgettable moments!<br><br>Happy B'Day!
+						<br><br><br><br><br><br><br><br><br>
+						“Happy birthday! May your Facebook wall be filled with messages from people you never talk to.”
+						<br><br><br><br><br><br><br><br><br>
+						“Happy birthday to one of the few people whose birthday I can remember without a Facebook reminder.”
+						<br><br><br><br><br><br><br><br><br>
+						“As you get older three things happen. The first is your memory goes, and I can’t remember the other two. Happy birthday!”
+						<br><br><br><br><br><br><br><br><br>
+						“Congratulations on being even more experienced. I’m not sure what you learned this year, but every experience transforms us into the people we are today. Happy birthday!”
+						<br><br><br><br><br><br><br><br><br>
+						“Hope your special day brings you all that your heart desires! Here’s wishing you a day full of pleasant surprises! Happy birthday!”
+						<br><br><br><br><br><br><br><br><br>
+						“I may not be by your side celebrating your special day with you, but I want you to know that I’m thinking of you and wishing you a wonderful birthday.”
+						<br><br><br><br><br><br><br><br><br>
+						“Life का हर Goal रहे आपका Clear,
+						तुम Success पाओ Without any Fear,
+						हर पल जियो Without any Tear,
+						Enjoy your day my Dear,
+						🎂	HAPPY BIRTHDAY 🎂🎁🎁"
+						<br><br><br><br><br><br><br><br><br>
+						“Thank u so much for getting admission in my college....”
+					</span></center>
+				</marquee>
+			</center>
+		</div>
+		<input class="play" type="image" src="play.png" onclick="audio.play()">
+		<input class="pause" type="image" src="pause.png" onclick="audio.pause()">
+		<marquee class="marq" direction="left" behaviour="slide">I wish you the Happiest Birthday....		Always Keep Smiling</marquee>
+		<a href="index.html">
+			<button style="float:right;margin-right:30px">⬅</button>
+		</a>
+	</body>
+</html>

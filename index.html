@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Scroll to see magic</title>
+		<link href="https://fonts.googleapis.com/css?family=Arizonia&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="scroll.css">
+	</head>
+	<body>
+		<h1 class="title">Scroll To See Magic</h1>
+		<section></section>
+		<div class="container">
+			<span>Happy Birthday Nisha</span>
+			<p>
+				May god give you a long healthy and self <br>
+				satisfying life ahead. May all your unfulfilled<br>
+				desires come true in your journey. Wishing<br>
+				you a gleeful and joyous birthday. 
+			</p>
+			<center>
+				<a href="cube.html"><button>Let's Go 🎈🎈</button></a>
+				</center>
+		</div>
+		<script type="text/javascript">
+			var section = document.querySelector('section');
+			window.addEventListener('scroll', function(){
+				var value = window.scrollY;
+				section.style.clipPath = "circle("+ value +"px at center)"
+			})
+		</script>
+	</body>
+</html>
